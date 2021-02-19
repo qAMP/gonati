@@ -47,7 +47,7 @@ func createClient(proxy *url.URL) *http.Client {
 	return client
 }
 
-func proxyClient(username string, password string, port int) *url.URL {
+func ProxyClient(username string, password string, port int) *url.URL {
 	c := newClient(username, password, port)
 	sP := generateProxy(c)
 
